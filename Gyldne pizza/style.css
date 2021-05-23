@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Pattaya', sans-serif;
+    font-family: 'Poiret One', sans-serif;
+    scroll-behavior: smooth;
 }
 
 p{
@@ -13,6 +15,8 @@ p{
     font-size: 200;
     color: #111;
 }
+
+
 
 .logo{
     position: relative;
@@ -32,13 +36,15 @@ p{
 }
 
 .logo .content h2{
-    font-size: 6em;
+    font-size: 8em;
+    font-family: 'Pattaya', sans-serif;
     color: #fff;
 }
 
 .logo .content p{
-    font-size: 1em;
+    font-size: 2em;
     color: #fff;
+    font-weight: 800;
 }
 
 .btn{
@@ -48,6 +54,8 @@ p{
     color: white;
     background-color: coral;
     border-radius: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
     box-shadow: inset 0 0 0 0 #fff;
     transition: ease-out 0.25s;
     font-size: 2rem;
@@ -59,3 +67,232 @@ p{
     color: crimson;
 }
 
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.scroller{
+    background: coral;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header .logo-header{
+    color: crimson;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header .logo-header span{
+    color: #fff;
+}
+
+header .menu-bar{
+    position: relative;
+    display: flex;
+}
+
+header .menu-bar li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .menu-bar li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    font-size: 2em;
+}
+
+header .menu-bar li a:hover{
+    color: crimson;
+}
+
+section{
+    padding: 100px;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .about-us{
+    position: relative;
+    width: 48%;
+
+}
+
+.textTiltle{
+    color: black;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.textTiltle span{
+    color: crimson;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.row .about-us .imgMenu{
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+}
+
+.row .about-us .imgMenu img{
+    position: absolute;
+    top: 0;
+    width: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menuTile{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.menu .infoContent{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.menu .infoContent .infoBox{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+
+}
+.menu .infoContent .infoBox .imgMenu{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.menu .infoContent .infoBox .imgMenu img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu .infoContent .infoBox .text{
+    padding: 15px 0 5px;
+}
+.menu .infoContent .infoBox .text h3{
+    font-weight: 800;
+
+}
+
+.chef .chefContent{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.chef .chefContent .infoBox{
+    width: 250px;
+    margin: 15px;
+}
+
+.chef .chefContent .infoBox .imgMenu{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.chef .chefContent .infoBox .imgMenu img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.chef .chefContent .infoBox .text{
+    padding: 15px 0 5px;
+}
+
+.chef .chefContent .infoBox .text h3{
+    font-weight: 800;
+    color: #111;
+}
+
+.contact{
+    background: url(img/cat-cooking.jpeg);
+    background-size: cover;
+}
+
+
+.contactInfo{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.8);
+    max-width: 500px;
+    margin-top: 50px;
+}
+.contactInfo h3{
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contactInfo .input{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contactInfo .input textarea,
+.contactInfo .input input{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.contactInfo .input input[type="submit"]{
+    font-size: 1em;
+    color: #111;
+    background: #ff0157;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+
+}
