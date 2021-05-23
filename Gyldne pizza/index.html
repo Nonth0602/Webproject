@@ -7,12 +7,155 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <header>
+            <a href="#" class="logo-header">GYLDNE PIZZA <span> - Feel the taste of Heaven</span></a>
+            <ul class="menu-bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#chef">Chef</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </header>
         <section class="logo" id="logo">
             <div class="content">
                 <h2>As fast as we can!</h2>
                 <p>We do our best in every pizza</p>
-                <button class="btn">Our menu</button>
+                <a href="#menu" class="btn">Our menu</a>
             </div>
         </section>
+        <section class="about" id="about">
+            <div class="row">
+                <div class="about-us">
+                    <h2 class="textTiltle"><span>A</span>bout Us</h2>
+                    <p>The history of pizza begins in antiquity, 
+                        when various ancient cultures produced basic flatbreads with several toppings.
+                        A precursor of pizza was probably the focaccia, 
+                        a flat bread known to the Romans as panis focacius, 
+                        to which toppings were then added. <br></br>
+                        Modern pizza evolved from similar flatbread dishes in Naples, Italy, in the 18th or early 19th century.
+                        The word pizza was first documented in A.D. 997 in Gaeta and successively in different parts of Central and Southern Italy. 
+                        Pizza was mainly eaten in Italy and by emigrants from there. 
+                        This changed after World War II when Allied troops stationed in Italy came to enjoy pizza along with other Italian foods.
+                    </p>
+                </div>
+                <div class="about-us">
+                    <div class="imgMenu">
+                        <img src="img/about-pizza.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="menu" id="menu">
+            <div class="menuTile">
+                <h2 class="textTiltle">Our<span>M</span>enu</h2>
+                <p>This is our menu</p>
+            </div>
+            <div class="infoContent">
+                <div class="infoBox">
+                    <div class="imgMenu">
+                        <img src="img/Pizza-Marinara.jpg">
+                    </div>
+                    <div class="text">
+                        <h3>Pizza Marinara</h3>
+                    </div>
+                </div>
+                <div class="infoBox">
+                    <div class="imgMenu">
+                        <img src="img/Pizza-Margherita.jpg">
+                    </div>
+                    <div class="text">
+                        <h3>Pizza Margherita</h3>
+                    </div>
+                </div>
+                <div class="infoBox">
+                    <div class="imgMenu">
+                        <img src="img/Pizza-alla-Napoletana.jpg">
+                    </div>
+                    <div class="text">
+                        <h3>Pizza alla Napoletana</h3>
+                    </div>
+                </div>
+                <div class="infoBox">
+                    <div class="imgMenu">
+                        <img src="img/Pizza-al-Prosciutto.jpg">
+                    </div>
+                    <div class="text">
+                        <h3>Pizza al Prosciutto</h3>
+                    </div>
+                </div>
+                <div class="infoBox">
+                    <div class="imgMenu">
+                        <img src="img/Pizza-ai-quattro-formaggi.jpg">
+                    </div>
+                    <div class="text">
+                        <h3>Pizza ai quattro formaggi</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="menuTile">
+                <a href="#menu" class="btn">All menu</a>
+            </div>
+        </section>
+        <section class="chef" id="chef">
+            <div class="menuTile">
+                <h2 class="textTiltle">Our<span>C</span>hef</h2>
+                <p>This is our chef</p>
+            </div>
+            <div class="chefContent">
+                <div class="infoBox">
+                    <div class="imgMenu">
+                        <img src="img/cat-chef1.jpg">
+                    </div>
+                    <div class="text">
+                        <h3>Chef</h3>
+                    </div>
+                </div>
+                <div class="infoBox">
+                    <div class="imgMenu">
+                        <img src="img/cat-chef2.jpg">
+                    </div>
+                    <div class="text">
+                        <h3>Chef</h3>
+                    </div>
+                </div>
+                <div class="infoBox">
+                    <div class="imgMenu">
+                        <img src="img/cat-chef3.jpg">
+                    </div>
+                    <div class="text">
+                        <h3>Chef</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="menuTile">
+                <h2 class="textTiltle"><span>C</span>ontact</h2>
+                <p>Find us here</p>
+            </div>
+            <div class="contactInfo">
+                <h3>Send Message</h3>
+                <div class="input">
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="input">
+                    <textarea placeholder="Name"></textarea>
+                </div>
+                <div class="input">
+                    <input type="submit" value="Send">
+                </div>
+            </div>
+        </section>
+
+        <script type="text/javascript">
+            window.addEventListener('scroll', function(){
+                const header = document.querySelector('header');
+                header.classList.toggle("scroller", window.scrollY > 0);
+             });
+        </script>
     </body>
 </html>
