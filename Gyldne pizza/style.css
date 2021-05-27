@@ -47,6 +47,7 @@ p{
     font-weight: 800;
 }
 
+
 .btn{
     width: 200px;
     height: 60px;
@@ -112,6 +113,10 @@ header .menu-bar li a{
     color: #fff;
     font-weight: 300;
     font-size: 2em;
+}
+
+header .menu-bar li a img{
+    width: 40px;
 }
 
 header .menu-bar li a:hover{

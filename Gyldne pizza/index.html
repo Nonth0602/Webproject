@@ -18,8 +18,10 @@
             <li><a href="#menu">Menu</a></li>
             <li><a href="#chef">Chef</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="#cart"><img src="img/cart.png"></a></li>
         </ul>
     </header>
+
     <!--Logo section-->
     <section class="logo" id="logo">
         <div class="content">
@@ -28,6 +30,7 @@
             <a href="#menu" class="btn">Our menu</a>
         </div>
     </section>
+
     <!--About restaurant section-->
     <section class="about" id="about">
         <div class="row">
@@ -54,6 +57,8 @@
             </div>
         </div>
     </section>
+
+
     <!--Food menus section-->
     <section class="menu" id="menu">
         <div class="menuTile">
@@ -114,10 +119,20 @@
             <a href="#menu" class="btn">All menu</a>
         </div>
     </section>
+
+
+    <!--cart-->
+    <section class="order" id="cart">
+        <div class="menuTile">
+            <h2 class="textTiltle">Your<span> O</span>rder</h2>
+        </div>
+    </section>
+
+
     <!--About Chefs section-->
     <section class="chef" id="chef">
         <div class="menuTile">
-            <h2 class="textTiltle">Our<span>C</span>hef</h2>
+            <h2 class="textTiltle">Our<span> C</span>hef</h2>
             <p>This is our chef</p>
         </div>
         <div class="chefContent">
@@ -147,6 +162,7 @@
             </div>
         </div>
     </section>
+
     <!--Contact us section-->
     <section class="contact" id="contact">
         <div class="menuTile">
@@ -170,12 +186,8 @@
         </div>
     </section>
 
-    <script type="text/javascript">
-        window.addEventListener('scroll', function () {
-            const header = document.querySelector('header');
-            header.classList.toggle("scroller", window.scrollY > 0);
-        });
-    </script>
+    <script src="script.js"></script>
+
 </body>
 
 </html>
