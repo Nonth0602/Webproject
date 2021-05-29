@@ -9,15 +9,13 @@
     font-family: 'Poiret One', sans-serif;
     scroll-behavior: smooth;
 }
-
 p{
     font-weight: 300;
     font-size: 200;
     color: #111;
 }
 
-
-
+/* Logo */
 .logo{
     position: relative;
     width: 100%;
@@ -27,27 +25,23 @@ p{
     align-items: center;
     background: url(img/pizza-background3.jpg);
     background-size: cover;
-
 }
-
 .logo .content{
     max-width: 900px;
     text-align: center;
 }
-
 .logo .content h2{
     font-size: 8em;
     font-family: 'Pattaya', sans-serif;
     color: #fff;
 }
-
 .logo .content p{
     font-size: 2em;
     color: #fff;
     font-weight: 800;
 }
 
-
+/* Button */
 .btn{
     width: 200px;
     height: 60px;
@@ -68,6 +62,7 @@ p{
     color: crimson;
 }
 
+/* Navbar */
 header{
     position: fixed;
     top: 0;
@@ -80,84 +75,62 @@ header{
     align-items: center;
     transition: 0.5s;
 }
-
-header.scroller{
-    background: coral;
-    padding: 10px 100px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-}
-
 header .logo-header{
     color: crimson;
     font-weight: 700;
     font-size: 2em;
     text-decoration: none;
 }
-
 header .logo-header span{
     color: #fff;
 }
-
 header .menu-bar{
     position: relative;
     display: flex;
 }
-
 header .menu-bar li{
     list-style: none;
     margin-left: 30px;
 }
-
 header .menu-bar li a{
     text-decoration: none;
     color: #fff;
     font-weight: 300;
     font-size: 2em;
 }
-
 header .menu-bar li a img{
     width: 40px;
 }
-
 header .menu-bar li a:hover{
     color: crimson;
 }
 
+/* Navbar animation */
+header.scroller{
+    background: coral;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
 section{
     padding: 100px;
 }
 
+/* About us */
 .row{
     position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-
 .row .about-us{
     position: relative;
     width: 48%;
-
 }
-
-.textTiltle{
-    color: black;
-    font-size: 2em;
-    font-weight: 300;
-}
-
-.textTiltle span{
-    color: crimson;
-    font-size: 1.5em;
-    font-weight: 700;
-}
-
 .row .about-us .imgMenu{
     position: relative;
     width: 100%;
     min-height: 300px;
 }
-
 .row .about-us .imgMenu img{
     position: absolute;
     top: 0;
@@ -167,15 +140,26 @@ section{
     object-fit: cover;
 }
 
-.menuTile{
+/* All text title */
+.textTiltle{
+    color: black;
+    font-size: 2em;
+    font-weight: 300;
+}
+.textTiltle span{
+    color: crimson;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.menuTitle{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
 
+/* Menu */
 .menu .infoContent{
     display: flex;
     justify-content: center;
@@ -183,20 +167,17 @@ section{
     flex-wrap: wrap;
     margin-top: 40px;
 }
-
 .menu .infoContent .infoBox{
     width: 340px;
     margin: 20px;
     border: 15px solid #fff;
     box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
-
 }
 .menu .infoContent .infoBox .imgMenu{
     position: relative;
     width: 100%;
     height: 300px;
 }
-
 .menu .infoContent .infoBox .imgMenu img{
     position: absolute;
     top: 0;
@@ -205,15 +186,76 @@ section{
     height: 100%;
     object-fit: cover;
 }
-
 .menu .infoContent .infoBox .text{
     padding: 15px 0 5px;
 }
 .menu .infoContent .infoBox .text h3{
     font-weight: 800;
-
+}
+.btn-add-to-cart{
+    width: 140px;
+    height: 30px;
+    border: none;
+    color: white;
+    background-color: coral;
+    border-radius: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: inset 0 0 0 0 #fff;
+    transition: ease-out 0.25s;
+    font-size: 1em;
+    outline: none;
 }
 
+/* Order */
+.cart .cartContent{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.cart .cartContent .infoBox{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+.cart .cartContent .infoBox .imgMenu{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.cart .cartContent .infoBox .imgMenu img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cart .cartContent .infoBox .text{
+    padding: 15px 0 5px;
+}
+.cart .cartContent .infoBox .text h3{
+    font-weight: 800;
+}
+.btn-remove-from-cart{
+    width: 160px;
+    height: 30px;
+    border: none;
+    color: white;
+    background-color: coral;
+    border-radius: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: inset 0 0 0 0 #fff;
+    transition: ease-out 0.25s;
+    font-size: 1em;
+    outline: none;
+}
+
+/* Chef */
 .chef .chefContent{
     display: flex;
     justify-content: center;
@@ -221,12 +263,10 @@ section{
     flex-direction: row;
     margin-top: 40px;
 }
-
 .chef .chefContent .infoBox{
     width: 250px;
     margin: 15px;
 }
-
 .chef .chefContent .infoBox .imgMenu{
     position: relative;
     width: 100%;
@@ -240,22 +280,19 @@ section{
     height: 100%;
     object-fit: cover;
 }
-
 .chef .chefContent .infoBox .text{
     padding: 15px 0 5px;
 }
-
 .chef .chefContent .infoBox .text h3{
     font-weight: 800;
     color: #111;
 }
 
+/* Contact us */
 .contact{
     background: url(img/cat-cooking.jpeg);
     background-size: cover;
 }
-
-
 .contactInfo{
     padding: 75px 50px;
     background: #fff;
@@ -269,7 +306,6 @@ section{
     margin-bottom: 20px;
     font-weight: 500;
 }
-
 .contactInfo .input{
     position: relative;
     width: 100%;
@@ -285,7 +321,6 @@ section{
     font-size: 16px;
     font-weight: 300;
 }
-
 .contactInfo .input input[type="submit"]{
     font-size: 1em;
     color: #111;
@@ -299,13 +334,4 @@ section{
     font-weight: 500;
     border: none;
     cursor: pointer;
-
-}
-
-.cart .cartContent .infoBox{
-    width: 340px;
-    margin: 20px;
-    border: 15px solid #fff;
-    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
-
 }

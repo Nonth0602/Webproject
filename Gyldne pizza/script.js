@@ -9,32 +9,32 @@ window.addEventListener('scroll', function () {
 const menu = [
     {
         name: 'Pizza Marinara',
-        price: 1,
+        price: 22.5,
         image: 'img/Pizza-Marinara.jpg',
     },
     {
         name: 'Pizza Margherita',
-        price: 2,
+        price: 29,
         image: 'img/Pizza-Margherita.jpg',
     },
     {
         name: 'Pizza alla Napoletana',
-        price: 3,
+        price: 25,
         image: 'img/Pizza-alla-Napoletana.jpg',
     },
     {
         name: 'Pizza al Prosciutto',
-        price: 4,
+        price: 20,
         image: 'img/Pizza-al-Prosciutto.jpg',
     },
     {
         name: 'Pizza ai quattro formaggi',
-        price: 5,
+        price: 32.75,
         image: 'img/Pizza-ai-quattro-formaggi.jpg',
     },
     {
         name: 'Pizza ai Funghi',
-        price: 6,
+        price: 35,
         image: 'img/Pizza-ai-Funghi.jpg',
     },
 ]
@@ -53,18 +53,16 @@ function showAllMenus() {
     menuList.innerHTML = ''
     menu.forEach((food, index) => {
         menuList.innerHTML += `
-            <div class="infoBox" id="menu-list">
-                <div class="imgMenu">
-                    <img src="${food.image}" alt="Pizza image">
-                </div>
-                <div class="text">
-                    <h3>${food.name}</h3>
-                    <h3>$${food.price}</h3>
-                    <div>
-                        <button class="btn-add-to-cart" onclick="addToCart(${index})">
-                            ADD TO CART
-                        </button>
-                    </div>
+            <div class="imgMenu">
+                <img src="${food.image}" alt="Pizza image">
+            </div>
+            <div class="text">
+                <h3>${food.name}</h3>
+                <h3>$${food.price}</h3>
+                <div>
+                    <button class="btn btn-add-to-cart" onclick="addToCart(${index})">
+                        ADD TO CART
+                    </button>
                 </div>
             </div>
         `
@@ -83,24 +81,22 @@ function showMenuInCart() {
     cart.dishes.forEach((cartDish) => {
         totalPrice += cartDish.totalEach
         cartList.innerHTML += `
-            <div class="infoBox" id="cart-list">
-                <div class="imgMenu">
-                    <img src="${cartDish.image}" alt="Pizza image" width="100%" height="100%">
-                </div>
-                <div class="text">
-                    <h3>${cartDish.name}</h3>
-                    <h3>Amount: ${cartDish.amount} Dish(es)</h3>
-                    <h3>Cost: ${cartDish.totalEach}</h3>
-                    <div>
-                        <button class="btn-remove-from-cart" onclick="removeFromCart('${cartDish.name}')">
-                            REMOVE FROM CART
-                        </button>
-                    </div>
-                </div>
+            <div class="imgMenu">
+                <img src="${cartDish.image}" alt="Pizza image">
             </div>
+            <div class="text">
+                <h3>${cartDish.name}</h3>
+                <h3>Amount: ${cartDish.amount} Dish(es)</h3>
+                <h3>Cost: ${cartDish.totalEach}</h3>
+                <div>
+                    <button class="btn btn-remove-from-cart" onclick="removeFromCart('${cartDish.name}')">
+                        REMOVE FROM CART
+                    </button>
+                </div>
+            </div>    
         `
     })
-    totalPriceElement.innerText = `Total : $${totalPrice}`
+    totalPriceElement.innerText = `Total Price: $${totalPrice}`
 }
 
 //Function add to cart
