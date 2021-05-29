@@ -66,54 +66,20 @@
             <p>This is our menu</p>
         </div>
         <div class="infoContent">
-            <div class="infoBox">
+            <div class="infoBox" id="menu-list">
                 <div class="imgMenu">
-                    <img src="img/Pizza-Marinara.jpg">
+                    <img src="" alt="Pizza image">
                 </div>
                 <div class="text">
-                    <h3>Pizza Marinara</h3>
+                    <h3>Pizza name</h3>
+                    <h3>$</h3>
+                    <div>
+                        <button class="btn-add-to-cart">
+                            ADD TO CART
+                        </button>
+                    </div>
                 </div>
-            </div>
-            <div class="infoBox">
-                <div class="imgMenu">
-                    <img src="img/Pizza-Margherita.jpg">
-                </div>
-                <div class="text">
-                    <h3>Pizza Margherita</h3>
-                </div>
-            </div>
-            <div class="infoBox">
-                <div class="imgMenu">
-                    <img src="img/Pizza-alla-Napoletana.jpg">
-                </div>
-                <div class="text">
-                    <h3>Pizza alla Napoletana</h3>
-                </div>
-            </div>
-            <div class="infoBox">
-                <div class="imgMenu">
-                    <img src="img/Pizza-al-Prosciutto.jpg">
-                </div>
-                <div class="text">
-                    <h3>Pizza al Prosciutto</h3>
-                </div>
-            </div>
-            <div class="infoBox">
-                <div class="imgMenu">
-                    <img src="img/Pizza-ai-quattro-formaggi.jpg">
-                </div>
-                <div class="text">
-                    <h3>Pizza ai quattro formaggi</h3>
-                </div>
-            </div>
-            <div class="infoBox">
-                <div class="imgMenu">
-                    <img src="img/Pizza-ai-Funghi.jpg">
-                </div>
-                <div class="text">
-                    <h3>Pizza ai Funghi</h3>
-                </div>
-            </div>
+            </div>            
         </div>
         <div class="menuTile">
             <a href="#menu" class="btn">All menu</a>
@@ -121,11 +87,29 @@
     </section>
 
 
-    <!--cart-->
-    <section class="order" id="cart">
+    <!--Cart section-->
+    <section class="cart" id="cart">
         <div class="menuTile">
             <h2 class="textTiltle">Your<span> O</span>rder</h2>
         </div>
+        <div class="cartContent">
+            <div class="infoBox" id="cart-list">
+                <div class="imgMenu">
+                    <img src="" alt="Pizza image">
+                </div>
+                <div class="text">
+                    <h3>Pizza name</h3>
+                    <h3>Amount: </h3>
+                    <h3>Cost: </h3>
+                    <div>
+                        <button class="btn-remove-from-cart">
+                            REMOVE FROM CART
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <b id="total-price">Total Price : $0</b>
     </section>
 
 
