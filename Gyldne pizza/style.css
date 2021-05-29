@@ -301,3 +301,11 @@ section{
     cursor: pointer;
 
 }
+
+.cart .cartContent .infoBox{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+
+}
